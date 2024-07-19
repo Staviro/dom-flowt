@@ -1,0 +1,17 @@
+@import '../shared/variables';
+
+@media screen and (max-width: $tablet-max) {      
+    .nav {
+        justify-content: space-between;
+
+        &-links {
+            display: none;
+            gap: $gap-small;
+            padding: 0 $padding-default;
+        }
+        
+        &-menu {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import '../shared/variables';
+
+.btn {
+    display: flex;
+    padding: $padding-small $padding-default;
+    border-radius: 50px;
+    background-color: $color-primary;
+    color: white;
+    width: fit-content;
+    align-items: center;
+    gap: $gap-small;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}

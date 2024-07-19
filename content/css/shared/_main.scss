@@ -1,0 +1,19 @@
+@import './variables';
+
+html {
+    font-size: 16px;
+    font-family: primary, Arial, Helvetica, sans-serif;
+    background-color: $color-primary-bg-light;
+    scroll-behavior: smooth;
+    word-break: break-word;
+    color: $color-text;
+    font-display: swap;
+
+    button, select, option {
+        font-family: primary;
+    }
+}
+
+body {
+    margin: 0;
+}

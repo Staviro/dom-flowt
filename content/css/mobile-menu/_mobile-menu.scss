@@ -1,0 +1,51 @@
+@import '../shared/variables';
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 16px;
+    left: auto;
+    right: 16px;
+    background-color: rgba($color-primary-bg-light, .8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 4;
+    border: 1px solid $color-light-grey;
+    border-radius: $border-radius-default;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &-header {
+        display: flex;
+        justify-content: end;
+        padding: $padding-default;
+    }
+
+    &-links {
+        padding: $padding-default;
+        padding-top: 0;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $color-text-light;
+        font-weight: 600;
+        padding: $padding-small $padding-default ;
+        display: flex;
+        gap: $gap-small;
+        border: 1px solid transparent;
+        align-items: center;
+        border-radius: $border-radius-default;
+        &:hover, &:active, &:focus {
+            border-color: $color-light-grey;
+            img {
+                width: 14px;
+            }
+        }
+        img {
+            filter: contrast(5%);
+            transition: ease-in-out 150ms;
+        }
+    }
+}

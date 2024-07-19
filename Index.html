@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DOM Flowt is a lightweight Javascript library for performing animations on elements as they appear into a users view.">
+    <link rel="icon" href="./content/icons/dom flowt-03.png">
+    <link rel="stylesheet" media="screen" href="./content/js/lib/stable/dom-flowt.1.0.css"/>
+    <link rel="stylesheet" media="screen" href="./content/css/main.css">
+    <title>DOM Flowt Javascript Library</title>
+</head>
+<body>
+    <main>
+        <nav id="nav" class="nav">
+            <a class="nav-brand" href="#">
+                <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="38" width="38" />
+            </a>
+            <div class="nav-links">
+                <a class="nav-link" href="#getting-started" title="Getting Started">Getting Started</a>
+                <a class="nav-link" href="#download" title="Download">Download</a>
+                <a class="nav-link" href="#why-use" title="Why Use">Why Use</a>
+                <a class="nav-link" href="#examples" title="Examples">Examples</a>
+            </div>
+            <div class="nav-menu">
+                <img onclick="openMobileMenu()" alt="menu icon" src="./content/icons/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <img onclick="closeMobileMenu()" alt="close" src="./content/icons/close_24dp_333_FILL0_wght400_GRAD0_opsz24.svg" width="22" height="22"/>
+            </div>
+            <div class="mobile-menu-links">
+                <a onclick="closeMobileMenu()" class="mobile-menu-link" href="#getting-started" title="Getting Started">
+                    <img alt="arrow" height="14" width="0" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/>
+                    <div>Getting Started</div>
+                </a>
+                <a onclick="closeMobileMenu()" class="mobile-menu-link" href="#download" title="Download">
+                    <img alt="arrow" height="14" width="0" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/>
+                    <div>Download</div>
+                </a>
+                <a onclick="closeMobileMenu()" class="mobile-menu-link" href="#why-use" title="Why Use">
+                    <img alt="arrow" height="14" width="0" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/>
+                    <div>Why Use</div>
+                </a>
+                <a onclick="closeMobileMenu()" class="mobile-menu-link" href="#examples" title="Examples">
+                    <img alt="arrow" height="14" width="0" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/>
+                    <div>Examples</div>
+                </a>
+            </div>
+        </div>
+        <section id="landing-page" class="bg-primary-light">
+            <div class="container dom-flowt-no-overflow ">
+                <div class="landing-header dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-right" dom-flowt-duration="800">
+                    MAKING WEB DEVELOPMENT EASIER AND MORE FUN
+                </div>
+                <div class="landing-description" dom-flowt-is-visible="false" dom-flowt-type="float-left" dom-flowt-duration="800">
+                    <b class="text-gradient">DOM Flowt</b> is a lightweight Javascript library for performing animations on elements as they appear into a users view.
+                </div>
+                <div class="dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-duration="800">
+                    <a class="btn" href="#getting-started" title="getting started">
+                        <img alt="arrow" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
+                        <div>Get Started</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="download" class="bg-dark" dom-flowt-is-visible="false">
+            <div class="container">
+                <div class="section-header text-gradient">
+                    Download
+                </div>
+                <div class="line-primary"></div>
+                <div class="section-body dom-flowt-no-overflow">
+                    <div class="text-container text-white">
+                        Latest stable version : 1.0
+                    </div>
+                    <div class="text-container text-white">
+                        Release Date : 2024-07-17
+                    </div>
+                    <div class="padding-y-small dom-flowt-hidden " dom-flowt-is-visible="false" dom-flowt-type="float-left">
+                        <a class="btn" href="./content/js/lib/stable/flowt.1.0.zip" title="Download dom-flowt.1.0.zip">
+                            <img alt="download" src="./content/icons/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
+                            <div>Download dom-flowt.1.0.zip</div>
+                        </a>
+                    </div>
+                    <div class="padding-y-small dom-flowt-hidden" dom-flowt-is-visible="false">
+                        <a class="btn" href="#getting-started" title="using dom flowt"> 
+                            <img alt="arrow" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
+                            <div>Using DOM flowt</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="getting-started" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false">
+            <div class="container">
+                <div class="section-header text-gradient">
+                    Getting Started
+                </div>
+                <div class="line-primary"></div>
+                <div class="section-body">
+                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                        To get started with using DOM Flowt you first need to download the zip file if you have not downloaded it yet.
+                        <br/>You can download the zip file at the <a href="#download" title="go to download">download section</a>
+                    </div>
+                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                        After downloading the zip file. You need to inject the CSS and JS into your page.
+                        <br/><b>**BOTH FILES ARE REQUIRED TO FULLY USE THE DOM-FLOWT LIBRARY</b>
+                    </div>
+                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                        DOM Flowt works with HTML attributes to make the configuration process simple.
+                        <br/>Below you will see a list of attributes you can use.
+                    </div>
+                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                        <div class="mini-section-header">
+                            Using “dom-flow-is-visible” attribute
+                        </div>
+                        <div class="mini-section-body">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                The “dom-flow-is-visible” is an indicator attribute that is used by the DOM Flowt javascript to determine whether the element has been animated yet or not.
+                                <br/><br/>
+                                When using this attribute, you must specify the value “false” to indicate to the javascript that this element has not been animated yet.
+                                <br/><br/>
+                                So the full declaration of the attribute is <b>dom-flow-is-visible=”false” </b>                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-grey"></div>
+                    <div class="mini-section dom-flowt-hidden" dom-flowt-is-visible="false">
+                        <div class="mini-section-header">
+                            Using “dom-flow-type” attribute
+                        </div>
+                        <div class="mini-section-body">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                The “dom-flow-type” is an a indicator attribute that is used by the DOM Flowt javascript to determine which type of animation to use.
+                                <br/><br/>
+                                There are currently 4 types of animations for DOM Flowt.
+                            </div>
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                <ul class="ul">
+                                    <li>fade</li>
+                                    <li>pop</li>
+                                    <li>float-right</li>
+                                    <li>float-left</li>
+                                </ul>
+                            </div>
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                When using this attribute, you must specify the type of animation you wish to use. 
+                                <br/>If the value is an invalid DOM flowt type, the javascript will use the “fade” animation type by default.
+                                <br/>If the value is not specified, DOM Flowt will use the “fade” animation type by default.
+                                <br/><br/>
+                                Full use of the attribute will now be <b>dom-flow-type=”pop”</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-grey"></div>
+                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false">
+                        <div class="mini-section-header">
+                            Using “dom-flowt-duration” attribute
+                        </div>
+                        <div class="mini-section-body">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                The “dom-flowt-duration” is an indicator attribute that is used by the DOM Flowt javascript to determine the duration of the animation.
+                                <br/><br/>
+                                When using this attribute, you must specify the duration you wish the animation to be.
+                                <br/>The value is a number. The duration is measured in milliseconds.
+                                <br/>If the value is an invalid number, DOM Flowt will use <b>500</b> by default.
+                                <br/><br/>
+                                So the full use of the attribute will now be <b>dom-flowt-duration=”500”</b>
+                            </div>
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                <div class="note">
+                                    <img alt="note" src="./content/icons/info_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="40" width="40">
+                                    <div class="note-text">
+                                        Do not specify the unit of the duration. Meaning if you use the value of “1s” will be discarded as it is invalid and the default value will be used. Only use the number as milliseconds. So “1s” = 1000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-grey"></div>
+                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false">
+                        <div class="mini-section-header">
+                            Using “dom-flowt-hidden” class
+                        </div>
+                        <div class="mini-section-body">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                The “dom-flowt-hidden” class is used to hide elements to allow them to be gracefully animated in when they appear on the users screen.
+                                <br/><br/>
+                                It is recommended that you use this class to prevent some weird situations when using DOM Flowt 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-grey"></div>
+                    <div class="mini-section dom-flowt-hidden" dom-flowt-is-visible="false">
+                        <div class="mini-section-header">
+                            Setting up the DOM Flowt Javascript
+                        </div>
+                        <div class="mini-section-body">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                After downloading the files and adding them to your project, you need to call the <b>checkForNewOnScreenElements</b> method. 
+                                <br/>You would normally call this method on the document.onscroll event if you are using vanilla js.
+                                <br/>This is to ensure that as the user is scrolling the DOM Flowt method is checking if any elements have come into the users view so that it can perform the animation.
+                                <br/><br/>
+                                It is also recommended that you run the <b>checkForNewOnScreenElements</b> method inside the window.onload event as well.
+                                <br/><br/>
+                                To call the method you need to access it inside the <b>DOM_FLOWT</b> object. So the correct way to call the method is <b>DOM_FLOWT.checkForNewOnScreenElements()</b>
+                            </div>
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                                <b>I hope you enjoy using DOM Flowt. Remember to share it if you love it!</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-grey"></div>
+                </div>
+            </div>
+        </section>
+        <section id="why-use" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false">
+            <div class="container">
+                <div class="section-header text-gradient text-center">
+                    Why Use DOM Flowt
+                </div>
+                <div class="line-primary"></div>
+                <div class="section-body">
+                    <div class="why-use-cards dom-flowt-hidden"  dom-flowt-is-visible="false">
+                        <div class="why-use-card">
+                            <div class="why-use-card-icon">
+                                <img alt="bulb" src="./content/icons/lightbulb_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
+                            </div>
+                            <div class="why-use-card-text">
+                                It is very easy to setup and use
+                            </div>
+                        </div>
+                        <div class="why-use-card">
+                            <div class="why-use-card-icon">
+                                <img alt="bulb" src="./content/icons/lightbulb_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
+                            </div>
+                            <div class="why-use-card-text">
+                                it is flexible and easy to extend.
+                            </div>
+                        </div>
+                        <div class="why-use-card">
+                            <div class="why-use-card-icon">
+                                <img alt="bulb" src="./content/icons/lightbulb_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
+                            </div>
+                            <div class="why-use-card-text">
+                                it is optimized for speed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="pop">
+            <div class="container">
+                <div class="section-header text-gradient text-center">
+                    ENHANCE A USERS EXPERIENCE AND MAKE YOUR WEBSITE’S ELEMENTS SMOOTHLY TRANSITION INTO YOUR USERS VIEW
+                </div>
+            </div>
+        </section>
+        <section id="examples" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false">
+            <div class="container">
+                <div class="section-header text-gradient text-center">
+                    Examples
+                </div>
+                <div class="line-primary"></div>
+                <div class="section-body">
+                    <div class="text-container text-white dom-flowt-hidden"  dom-flowt-is-visible="false">
+                        Using the DOM Flowt attributes on your element
+                    </div>
+                    <div class="padding-y-small dom-flowt-hidden"  dom-flowt-is-visible="false">
+                        <textarea class="code-dark" readonly rows="8">
+<div 
+class="dom-flowt-hidden" 
+dom-flowt-is-visible="false" 
+dom-flowt-type="fade" 
+dom-flowt-duration="1000"> 
+Some Content
+</div> 
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false">
+            <div class="container padding-y-small">
+                <footer class="footer">
+                    <div class="footer-logo">
+                        <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="74" />
+                    </div>
+                    <div class="footer-links dom-flowt-hidden" dom-flowt-is-visible="false">
+                        <a class="footer-link" href="#getting-started" title="Getting Started">Getting Started</a>
+                        <a class="footer-link" href="#download" title="Download">Download</a>
+                        <a class="footer-link" href="#why-use" title="Why Use">Why Use</a>
+                        <a class="footer-link" href="#examples" title="Examples">Examples</a>
+                    </div>
+                    <div class="line-primary"></div>
+                    <div class="footer-copy">
+                        2024 DOM Flowt &copy; Joseph Morukhuladi
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+    <script src="./content/js/lib/stable/dom-flowt.1.0.js"></script>
+    <script src="./content/js/app.js"></script>
+</body>
+</html>

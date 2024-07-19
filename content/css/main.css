@@ -1,0 +1,346 @@
+@font-face {
+  font-family: primary;
+  src: url("../font/Nunito-VariableFont_wght.ttf");
+}
+img {
+  display: flex;
+}
+
+.bg-primary-light {
+  background-color: #FAFAFF;
+}
+
+.bg-dark {
+  background-color: #2A2A2A;
+}
+
+.container {
+  max-width: 1119px;
+  margin: auto;
+  padding: 62px 16px;
+}
+
+.section-header {
+  font-size: 44px;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px 0;
+}
+
+.section-body {
+  padding: 16px 0;
+}
+
+.line-primary {
+  height: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: linear-gradient(to right, #5555FF, #2CD196);
+}
+
+.line-grey {
+  height: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: #efefef;
+}
+
+.text-container {
+  padding: 8px 0;
+}
+
+.text-white {
+  color: white;
+}
+
+.padding-y-small {
+  padding: 8px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ul {
+  color: #AAAAAA;
+  margin: 0;
+}
+.ul li {
+  padding: 8px 0;
+}
+
+.mini-section {
+  padding: 16px 0;
+}
+
+.mini-section-header {
+  color: #2CD196;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+.note {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #5555FF;
+  color: white;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.note-text {
+  padding: 0 8px;
+}
+
+.code-dark {
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  color: #2CD196;
+  font-family: monospace;
+  width: 100%;
+  overflow: auto;
+  border: none;
+  max-width: 100%;
+  box-sizing: border-box;
+  max-height: 250px;
+}
+
+html {
+  font-size: 16px;
+  font-family: primary, Arial, Helvetica, sans-serif;
+  background-color: #FAFAFF;
+  scroll-behavior: smooth;
+  word-break: break-word;
+  color: #3F3F3F;
+  font-display: swap;
+}
+html button, html select, html option {
+  font-family: primary;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  border-radius: 16px;
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  border: 1px solid #efefef;
+  z-index: 3;
+  background-color: rgba(250, 250, 255, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  max-width: calc(100% - 32px);
+  width: 100%;
+}
+.nav-links {
+  display: flex;
+  gap: 8px;
+  padding: 0 16px;
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #666666;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: ease-in-out 150ms;
+  font-size: 13px;
+  font-weight: 600;
+}
+.nav-link:hover {
+  background: linear-gradient(to right, #5555FF, #2CD196);
+  color: white;
+}
+.nav-menu {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav-links {
+    display: none;
+    gap: 8px;
+    padding: 0 16px;
+  }
+  .nav-menu {
+    display: block;
+  }
+}
+.text-gradient, .landing-header {
+  background: linear-gradient(to right, #5555FF, #2CD196);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.landing-header {
+  font-size: 56px;
+  font-weight: bold;
+}
+.landing-description {
+  padding: 8px 0;
+}
+
+.btn {
+  display: flex;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: #5555FF;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footer {
+  border-top: 1px solid #efefef;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-link {
+  text-decoration: none;
+  color: #3F3F3F;
+  font-weight: 600;
+}
+.footer-logo {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 16px 0;
+}
+.footer-copy {
+  padding: 16px 0;
+  text-align: center;
+  color: #AAAAAA;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.why-use-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.why-use-card {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  justify-content: center;
+  text-align: center;
+  width: calc(25% - 16px + 4px);
+  box-sizing: border-box;
+}
+.why-use-card-icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 8px;
+}
+.why-use-card-text {
+  padding: 8px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .why-use-card {
+    width: calc(33.3333333333% - 16px + 5px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .why-use-card {
+    width: calc(50% - 16px + 5px);
+  }
+}
+@media screen and (max-width: 579px) {
+  .why-use-card {
+    width: 100%;
+  }
+}
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: auto;
+  right: 16px;
+  background-color: rgba(250, 250, 255, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 4;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  max-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mobile-menu-header {
+  display: flex;
+  justify-content: end;
+  padding: 16px;
+}
+.mobile-menu-links {
+  padding: 16px;
+  padding-top: 0;
+}
+.mobile-menu-link {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 600;
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  border: 1px solid transparent;
+  align-items: center;
+  border-radius: 8px;
+}
+.mobile-menu-link:hover, .mobile-menu-link:active, .mobile-menu-link:focus {
+  border-color: #efefef;
+}
+.mobile-menu-link:hover img, .mobile-menu-link:active img, .mobile-menu-link:focus img {
+  width: 14px;
+}
+.mobile-menu-link img {
+  filter: contrast(5%);
+  transition: ease-in-out 150ms;
+}/*# sourceMappingURL=main.css.map */

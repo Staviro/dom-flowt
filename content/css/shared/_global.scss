@@ -1,0 +1,109 @@
+@import './variables';
+img {
+    display: flex;
+}
+
+.bg-primary-light {
+    background-color: $color-primary-bg-light;
+}
+
+.bg-dark {
+    background-color: $color-dark;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: auto;
+    padding: 62px $padding-default;
+}
+
+.section-header {
+    font-size: 44px;
+    font-weight: bold;
+    width: fit-content;
+    padding: $padding-default 0;
+}
+
+.section-body {
+    padding: $padding-default 0;
+}
+
+.line-primary {
+    height: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: $primary-gradient;
+}
+
+.line-grey {
+    height: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: $color-light-grey;
+}
+
+.text-container {
+    padding: $padding-small 0;
+}
+
+.text-white {
+    color: white;
+}
+
+.padding-y-small {
+    padding: $padding-small 0px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.ul {
+    color: $color-text-lighter;
+    margin: 0;
+
+    li {
+        padding: $padding-small 0;
+    }
+}
+
+.mini-section {
+    padding: $padding-default 0;
+}
+
+.mini-section-header {
+    color: $color-secondary;
+    font-size: 22px;
+    font-weight: bold;
+    padding: $padding-default 0;
+}
+
+.note {
+    padding: $padding-small $padding-default;
+    border-radius: $border-radius-small;
+    background-color: $color-primary;
+    color: white;
+    display: flex;
+    gap: $gap-small;
+    align-items: center;
+
+    &-text {
+        padding: 0 $padding-small;
+    }
+}
+
+.code-dark {
+    padding: $padding-default;
+    background-color: rgba(white, 5%);
+    border-radius: $border-radius-small;
+    color: $color-secondary;
+    font-family: monospace;
+    width: 100%;
+    overflow: auto;
+    border: none;
+    max-width: 100%;
+    box-sizing: border-box;
+    max-height: 250px;
+}

@@ -1,0 +1,9 @@
+@import '../shared/variables';
+@media screen and (max-width: $phone-lg-max) {
+    .footer {
+        &-links {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
