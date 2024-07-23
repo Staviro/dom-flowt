@@ -3,12 +3,11 @@
 
 .nav {
     position: fixed;
-    top: 16px;
-    left: 16px;
-    right: 16px;
-    border-radius: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    padding: $padding-small $padding-default;
+    padding: $padding-smaller $padding-default;
     align-items: center;
     border: 1px solid $color-light-grey;
     z-index: 3;
@@ -17,8 +16,6 @@
     -webkit-backdrop-filter: blur(5px);
     box-shadow: 0 2px 8px rgba(black, 3%);
     box-sizing: border-box;
-    max-width: calc(100% - 32px);
-    width: 100%;
 
     &-links {
         display: flex;

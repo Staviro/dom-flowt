@@ -110,6 +110,26 @@ img {
   max-height: 250px;
 }
 
+.change-log {
+  padding: 16px;
+  border-radius: 8px;
+  color: #AAAAAA;
+  background-color: #373737;
+}
+.change-log-header {
+  font-weight: bold;
+  color: white;
+}
+
+.new-indicator {
+  font-size: 12px;
+  border-radius: 4px;
+  background: linear-gradient(to right, #5555FF, #2CD196);
+  padding: 4px;
+  color: white;
+  margin: 0 4px;
+}
+
 html {
   font-size: 16px;
   font-family: primary, Arial, Helvetica, sans-serif;
@@ -129,12 +149,11 @@ body {
 
 .nav {
   position: fixed;
-  top: 16px;
-  left: 16px;
-  right: 16px;
-  border-radius: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  padding: 8px 16px;
+  padding: 4px 16px;
   align-items: center;
   border: 1px solid #efefef;
   z-index: 3;
@@ -143,8 +162,6 @@ body {
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   box-sizing: border-box;
-  max-width: calc(100% - 32px);
-  width: 100%;
 }
 .nav-links {
   display: flex;
@@ -301,15 +318,14 @@ body {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 16px;
+  top: 0;
   left: auto;
-  right: 16px;
+  right: 0;
   background-color: rgba(250, 250, 255, 0.8);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 4;
   border: 1px solid #efefef;
-  border-radius: 8px;
   max-width: 350px;
   width: 100%;
   box-sizing: border-box;

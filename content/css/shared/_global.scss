@@ -107,3 +107,24 @@ img {
     box-sizing: border-box;
     max-height: 250px;
 }
+
+.change-log {
+    padding: $padding-default;
+    border-radius: $border-radius-default;
+    color:$color-text-lighter;
+    background-color: lighten($color-dark, 5%);
+    
+    &-header {
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.new-indicator {
+    font-size: 12px;
+    border-radius: $border-radius-small;
+    background: $primary-gradient;
+    padding: $padding-smaller;
+    color: white;
+    margin: 0 $padding-smaller;
+}

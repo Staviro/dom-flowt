@@ -3,15 +3,14 @@
 .mobile-menu {
     display: none;
     position: fixed;
-    top: 16px;
+    top: 0;
     left: auto;
-    right: 16px;
+    right: 0;
     background-color: rgba($color-primary-bg-light, .8);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     z-index: 4;
     border: 1px solid $color-light-grey;
-    border-radius: $border-radius-default;
     max-width: 350px;
     width: 100%;
     box-sizing: border-box;
