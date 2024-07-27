@@ -108,6 +108,12 @@ img {
     max-height: 250px;
 }
 
+.change-logs {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-small;
+}
+
 .change-log {
     padding: $padding-default;
     border-radius: $border-radius-default;

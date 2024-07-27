@@ -6,24 +6,28 @@
     <meta name="description" content="DOM Flowt is a lightweight JavaScript library for performing animations on elements as they appear into a users view.">
     <meta name="author" content="Joseph Morukhuladi">
     <link rel="icon" href="./content/icons/dom flowt-03.png">
-    <link rel="stylesheet" media="screen" href="./content/js/lib/stable/dom-flowt.1.0.1.css"/>
+    <link rel="stylesheet" media="screen" href="./content/js/lib/stable/dom-flowt.1.0.2.css"/>
     <link rel="stylesheet" media="screen" href="./content/css/main.css">
     <title>DOM Flowt Javascript Library</title>
 </head>
 <body>
     <main>
         <nav id="nav" class="nav">
-            <a class="nav-brand" href="#">
-                <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="38" width="38" />
-            </a>
-            <div class="nav-links">
-                <a class="nav-link" href="#getting-started" title="Getting Started">Getting Started</a>
-                <a class="nav-link" href="#download" title="Download">Download</a>
-                <a class="nav-link" href="#why-use" title="Why Use">Why Use</a>
-                <a class="nav-link" href="#examples" title="Examples">Examples</a>
-            </div>
-            <div class="nav-menu">
-                <img onclick="openMobileMenu()" alt="menu icon" src="./content/icons/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
+            <div class="container">
+                <div class="nav-content">
+                    <a class="nav-brand" href="#">
+                        <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="38" width="38" />
+                    </a>
+                    <div class="nav-links">
+                        <a class="nav-link" href="#getting-started" title="Getting Started">Getting Started</a>
+                        <a class="nav-link" href="#download" title="Download">Download</a>
+                        <a class="nav-link" href="#why-use" title="Why Use">Why Use</a>
+                        <a class="nav-link" href="#examples" title="Examples">Examples</a>
+                    </div>
+                    <div class="nav-menu">
+                        <img onclick="openMobileMenu()" alt="menu icon" src="./content/icons/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="mobile-menu" id="mobile-menu">
@@ -73,23 +77,33 @@
                 <div class="line-primary"></div>
                 <div class="section-body dom-flowt-no-overflow">
                     <div class="text-container text-white">
-                        Latest stable version : 1.0.1
+                        Latest stable version : 1.0.2
                     </div>
                     <div class="text-container text-white">
-                        Release Date : 2024-07-23
+                        Release Date : 2024-07-27
                     </div>
-                    <div class="change-log">
-                        <div class="change-log-header">
-                            Change Log 1.0.1
+                    <div class="change-logs">
+                        <div class="change-log">
+                            <div class="change-log-header">
+                                Change Log 1.0.2
+                            </div>
+                            <ul>
+                                <li>Fixing potential error on JavaScript for loop</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Adding new animation type "fade-plain"</li>
-                        </ul>
+                        <div class="change-log">
+                            <div class="change-log-header">
+                                Change Log 1.0.1
+                            </div>
+                            <ul>
+                                <li>Adding new animation type "fade-plain"</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="padding-y-small dom-flowt-hidden " dom-flowt-is-visible="false" dom-flowt-type="float-left">
-                        <a class="btn" href="./content/js/lib/stable/dom-flowt.1.0.1.zip" title="Download dom-flowt.1.0.1.zip">
+                        <a class="btn" href="./content/js/lib/stable/dom-flowt.1.0.2.zip" title="Download dom-flowt.1.0.2.zip">
                             <img alt="download" src="./content/icons/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
-                            <div>Download dom-flowt.1.0.1.zip</div>
+                            <div>Download dom-flowt.1.0.2.zip</div>
                         </a>
                     </div>
                     <div class="padding-y-small dom-flowt-hidden" dom-flowt-is-visible="false">
@@ -312,7 +326,7 @@ Some Content
             </div>
         </section>
     </main>
-    <script src="./content/js/lib/stable/dom-flowt.1.0.1.js"></script>
+    <script src="./content/js/lib/stable/dom-flowt.1.0.2.js"></script>
     <script src="./content/js/app.js"></script>
 </body>
 </html>

@@ -110,6 +110,12 @@ img {
   max-height: 250px;
 }
 
+.change-logs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .change-log {
   padding: 16px;
   border-radius: 8px;
@@ -152,9 +158,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
   padding: 4px 16px;
-  align-items: center;
   border: 1px solid #efefef;
   z-index: 3;
   background-color: rgba(250, 250, 255, 0.8);
@@ -162,6 +166,13 @@ body {
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   box-sizing: border-box;
+}
+.nav .container {
+  padding: 0;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
 }
 .nav-links {
   display: flex;
