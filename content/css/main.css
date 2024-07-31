@@ -198,9 +198,6 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .nav {
-    justify-content: space-between;
-  }
   .nav-links {
     display: none;
     gap: 8px;
@@ -208,6 +205,9 @@ body {
   }
   .nav-menu {
     display: block;
+  }
+  .nav-content {
+    justify-content: space-between;
   }
 }
 .text-gradient, .landing-header {

@@ -2,7 +2,6 @@
 
 @media screen and (max-width: $tablet-max) {      
     .nav {
-        justify-content: space-between;
 
         &-links {
             display: none;
@@ -12,6 +11,10 @@
         
         &-menu {
             display: block;
+        }
+
+        &-content {
+            justify-content: space-between;
         }
     }
 }

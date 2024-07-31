@@ -6,7 +6,7 @@
     <meta name="description" content="DOM Flowt is a lightweight JavaScript library for performing animations on elements as they appear into a users view.">
     <meta name="author" content="Joseph Morukhuladi">
     <link rel="icon" href="./content/icons/dom flowt-03.png">
-    <link rel="stylesheet" media="screen" href="./content/js/lib/stable/dom-flowt.1.0.2.css"/>
+    <link rel="stylesheet" media="screen" href="./content/js/lib/stable/dom-flowt.1.0.3.css"/>
     <link rel="stylesheet" media="screen" href="./content/css/main.css">
     <title>DOM Flowt Javascript Library</title>
 </head>
@@ -61,7 +61,7 @@
                 <div class="landing-description" dom-flowt-is-visible="false" dom-flowt-type="float-left" dom-flowt-duration="800">
                     <b class="text-gradient">DOM Flowt</b> is a lightweight JavaScript library for performing animations on elements as they appear into a users view.
                 </div>
-                <div class="dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-duration="800">
+                <div class="dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-duration="800" dom-flowt-type="float-up">
                     <a class="btn" href="#getting-started" title="getting started">
                         <img alt="arrow" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
                         <div>Get Started</div>
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </section>
-        <section id="download" class="bg-dark" dom-flowt-is-visible="false">
+        <section id="download" class="bg-dark" dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container">
                 <div class="section-header text-gradient">
                     Download
@@ -77,12 +77,22 @@
                 <div class="line-primary"></div>
                 <div class="section-body dom-flowt-no-overflow">
                     <div class="text-container text-white">
-                        Latest stable version : 1.0.2
+                        Latest stable version : 1.0.3
                     </div>
                     <div class="text-container text-white">
-                        Release Date : 2024-07-27
+                        Release Date : 2024-07-31
                     </div>
                     <div class="change-logs">
+                        <div class="change-log">
+                            <div class="change-log-header">
+                                Change Log 1.0.3
+                            </div>
+                            <ul>
+                                <li>Renaming animation type "fade-plain" to "fade"</li>
+                                <li>Adding new animation type "float-down"</li>
+                                <li>Adding new animation type "float-up"</li>
+                            </ul>
+                        </div>
                         <div class="change-log">
                             <div class="change-log-header">
                                 Change Log 1.0.2
@@ -101,12 +111,12 @@
                         </div>
                     </div>
                     <div class="padding-y-small dom-flowt-hidden " dom-flowt-is-visible="false" dom-flowt-type="float-left">
-                        <a class="btn" href="./content/js/lib/stable/dom-flowt.1.0.2.zip" title="Download dom-flowt.1.0.2.zip">
+                        <a class="btn" href="./content/js/lib/stable/dom-flowt.1.0.3.zip" title="Download dom-flowt">
                             <img alt="download" src="./content/icons/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
-                            <div>Download dom-flowt.1.0.2.zip</div>
+                            <div>Download dom-flowt.1.0.3.zip</div>
                         </a>
                     </div>
-                    <div class="padding-y-small dom-flowt-hidden" dom-flowt-is-visible="false">
+                    <div class="padding-y-small dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <a class="btn" href="#getting-started" title="using dom flowt"> 
                             <img alt="arrow" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
                             <div>Using DOM flowt</div>
@@ -115,31 +125,31 @@
                 </div>
             </div>
         </section>
-        <section id="getting-started" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false">
+        <section id="getting-started" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container">
                 <div class="section-header text-gradient">
                     Getting Started
                 </div>
                 <div class="line-primary"></div>
                 <div class="section-body">
-                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800" dom-flowt-type="float-up">
                         To get started with using DOM Flowt you first need to download the zip file if you have not downloaded it yet.
                         <br/>You can download the zip file at the <a href="#download" title="go to download">download section</a>
                     </div>
-                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800" dom-flowt-type="float-up">
                         After downloading the zip file. You need to inject the CSS and JS into your page.
                         <br/><b>**BOTH FILES ARE REQUIRED TO FULLY USE THE DOM-FLOWT LIBRARY</b>
                     </div>
-                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                    <div class="text-container dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800" dom-flowt-type="float-up">
                         DOM Flowt works with HTML attributes to make the configuration process simple.
                         <br/>Below you will see a list of attributes you can use.
                     </div>
-                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800">
+                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-duration="800" dom-flowt-type="float-up">
                         <div class="mini-section-header">
                             Using “dom-flow-is-visible” attribute
                         </div>
                         <div class="mini-section-body">
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 The “dom-flow-is-visible” is an indicator attribute that is used by the DOM Flowt javascript to determine whether the element has been animated yet or not.
                                 <br/><br/>
                                 When using this attribute, you must specify the value “false” to indicate to the javascript that this element has not been animated yet.
@@ -149,26 +159,27 @@
                         </div>
                     </div>
                     <div class="line-grey"></div>
-                    <div class="mini-section dom-flowt-hidden" dom-flowt-is-visible="false">
+                    <div class="mini-section dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <div class="mini-section-header">
                             Using “dom-flow-type” attribute
                         </div>
                         <div class="mini-section-body">
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 The “dom-flow-type” is an a indicator attribute that is used by the DOM Flowt javascript to determine which type of animation to use.
                                 <br/><br/>
                                 Here are the current types of animations in DOM Flowt
                             </div>
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 <ul class="ul">
                                     <li>fade</li>
-                                    <li>fade-plain<span class="new-indicator">new</span></li>
                                     <li>pop</li>
                                     <li>float-right</li>
                                     <li>float-left</li>
+                                    <li>float-down</li>
+                                    <li>float-up</li>
                                 </ul>
                             </div>
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 When using this attribute, you must specify the type of animation you wish to use. 
                                 <br/>If the value is an invalid DOM flowt type, the javascript will use the “fade” animation type by default.
                                 <br/>If the value is not specified, DOM Flowt will use the “fade” animation type by default.
@@ -178,12 +189,12 @@
                         </div>
                     </div>
                     <div class="line-grey"></div>
-                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false">
+                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <div class="mini-section-header">
                             Using “dom-flowt-duration” attribute
                         </div>
                         <div class="mini-section-body">
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 The “dom-flowt-duration” is an indicator attribute that is used by the DOM Flowt javascript to determine the duration of the animation.
                                 <br/><br/>
                                 When using this attribute, you must specify the duration you wish the animation to be.
@@ -192,7 +203,7 @@
                                 <br/><br/>
                                 So the full use of the attribute will now be <b>dom-flowt-duration=”500”</b>
                             </div>
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 <div class="note">
                                     <img alt="note" src="./content/icons/info_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="40" width="40">
                                     <div class="note-text">
@@ -203,12 +214,12 @@
                         </div>
                     </div>
                     <div class="line-grey"></div>
-                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false">
+                    <div class="mini-section dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <div class="mini-section-header">
                             Using “dom-flowt-hidden” class
                         </div>
                         <div class="mini-section-body">
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 The “dom-flowt-hidden” class is used to hide elements to allow them to be gracefully animated in when they appear on the users screen.
                                 <br/><br/>
                                 It is recommended that you use this class to prevent some weird situations when using DOM Flowt 
@@ -216,12 +227,12 @@
                         </div>
                     </div>
                     <div class="line-grey"></div>
-                    <div class="mini-section dom-flowt-hidden" dom-flowt-is-visible="false">
+                    <div class="mini-section dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <div class="mini-section-header">
                             Setting up the DOM Flowt Javascript
                         </div>
                         <div class="mini-section-body">
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 After downloading the files and adding them to your project, you need to call the <b>checkForNewOnScreenElements</b> method. 
                                 <br/>You would normally call this method on the document.onscroll event if you are using vanilla js.
                                 <br/>This is to ensure that as the user is scrolling the DOM Flowt method is checking if any elements have come into the users view so that it can perform the animation.
@@ -230,7 +241,7 @@
                                 <br/><br/>
                                 To call the method you need to access it inside the <b>DOM_FLOWT</b> object. So the correct way to call the method is <b>DOM_FLOWT.checkForNewOnScreenElements()</b>
                             </div>
-                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false">
+                            <div class="text-container dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
                                 <b>I hope you enjoy using DOM Flowt. Remember to share it if you love it!</b>
                             </div>
                         </div>
@@ -239,14 +250,14 @@
                 </div>
             </div>
         </section>
-        <section id="why-use" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false">
+        <section id="why-use" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container">
                 <div class="section-header text-gradient text-center">
                     Why Use DOM Flowt
                 </div>
                 <div class="line-primary"></div>
                 <div class="section-body">
-                    <div class="why-use-cards dom-flowt-hidden"  dom-flowt-is-visible="false">
+                    <div class="why-use-cards dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <div class="why-use-card">
                             <div class="why-use-card-icon">
                                 <img alt="bulb" src="./content/icons/lightbulb_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
@@ -282,17 +293,17 @@
                 </div>
             </div>
         </section>
-        <section id="examples" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false">
+        <section id="examples" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container">
                 <div class="section-header text-gradient text-center">
                     Examples
                 </div>
                 <div class="line-primary"></div>
                 <div class="section-body">
-                    <div class="text-container text-white dom-flowt-hidden"  dom-flowt-is-visible="false">
+                    <div class="text-container text-white dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         Using the DOM Flowt attributes on your element
                     </div>
-                    <div class="padding-y-small dom-flowt-hidden"  dom-flowt-is-visible="false">
+                    <div class="padding-y-small dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <textarea class="code-dark" readonly rows="8">
 <div 
 class="dom-flowt-hidden" 
@@ -306,11 +317,11 @@ Some Content
                 </div>
             </div>
         </section>
-        <section id="footer" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false">
+        <section id="footer" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container padding-y-small">
                 <footer class="footer">
                     <div class="footer-logo">
-                        <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="74" />
+                        <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="74" dom-flowt-type="float-up" />
                     </div>
                     <div class="footer-links dom-flowt-hidden" dom-flowt-is-visible="false">
                         <a class="footer-link" href="#getting-started" title="Getting Started">Getting Started</a>
@@ -326,7 +337,7 @@ Some Content
             </div>
         </section>
     </main>
-    <script src="./content/js/lib/stable/dom-flowt.1.0.2.js"></script>
+    <script src="./content/js/lib/stable/dom-flowt.1.0.3.js"></script>
     <script src="./content/js/app.js"></script>
 </body>
 </html>
