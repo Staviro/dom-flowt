@@ -1,6 +1,8 @@
+// @desc Setting variables
 $translate-y-height: 60px;
 $float-side-space: 60px;
 
+// @desc Creating DOM Flowt classes
 .dom-flowt-hidden {
     opacity: 0;
 }
@@ -9,12 +11,14 @@ $float-side-space: 60px;
     overflow: hidden;
 }
 
+// @desc Setting base transition behaviour
 .dom-flowt-transition {
     animation-duration: 500ms;
     animation-iteration-count: 1;
     box-sizing: border-box;
 }
 
+// @desc Creating DOM FLowt animation classes
 .dom-flowt-fade {
     @extend .dom-flowt-transition;
     animation-name: dom-flowt-fade;
@@ -45,6 +49,8 @@ $float-side-space: 60px;
     animation-name: dom-flowt-float-up;
 }
 
+
+// @desc Creatind DOM FLowt animations or keyframes
 @keyframes dom-flowt-fade {
     0% {
         opacity: 0;
