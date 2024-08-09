@@ -1,0 +1,116 @@
+// @desc Setting variables
+$translate-y-height: 60px;
+$float-side-space: 60px;
+
+// @desc Creating DOM Flowt classes
+.dom-flowt-hidden {
+    opacity: 0;
+}
+
+.dom-flowt-no-overflow {
+    overflow: hidden;
+}
+
+// @desc Setting base transition behaviour
+.dom-flowt-transition {
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    box-sizing: border-box;
+}
+
+// @desc Creating DOM FLowt animation classes
+.dom-flowt-fade {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-fade;
+}
+
+.dom-flowt-pop {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-pop;
+}
+
+.dom-flowt-float-right {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-float-right;
+}
+
+.dom-flowt-float-left {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-float-left;
+}
+
+.dom-flowt-float-down {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-float-down;
+}
+
+.dom-flowt-float-up {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-float-up;
+}
+
+
+// @desc Creatind DOM FLowt animations or keyframes
+@keyframes dom-flowt-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dom-flowt-pop {
+    0% {
+        transform: translateY($translate-y-height) scale(0%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(100%);
+    }
+}
+
+@keyframes dom-flowt-float-right {
+    0% {
+        transform: translateX(-$float-side-space);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes dom-flowt-float-left {
+    0% {
+        transform: translateX($float-side-space);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes dom-flowt-float-down {
+    0% {
+        transform: translateY(-$float-side-space);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dom-flowt-float-up {
+    0% {
+        transform: translateY($float-side-space);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
