@@ -6,13 +6,12 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: $padding-smaller $padding-default;
+    padding: $padding-small $padding-default;
     border: 1px solid $color-light-grey;
     z-index: 3;
-    background-color: rgba($color-primary-bg-light, .8);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 2px 8px rgba(black, 3%);
+    background-color: white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     box-sizing: border-box;
 
     .container {
@@ -37,8 +36,8 @@
         padding: $padding-small $padding-default;
         border-radius: $border-radius-default;
         transition: ease-in-out 150ms;
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: 400;
 
         &:hover {
             background: $primary-gradient;

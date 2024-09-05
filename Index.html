@@ -6,7 +6,7 @@
     <meta name="description" content="DOM Flowt is a lightweight JavaScript library for performing animations on elements as they appear into a users view.">
     <meta name="author" content="Joseph Morukhuladi">
     <link rel="icon" href="./content/icons/dom flowt-03.png">
-    <link rel="stylesheet" media="screen" href="./content/js/lib/stable/dom-flowt.1.1.css"/>
+    <link rel="stylesheet" media="screen" href="./content/lib/stable/dom-flowt.2.0.css"/>
     <link rel="stylesheet" media="screen" href="./content/css/main.css">
     <title>DOM Flowt Javascript Library</title>
 </head>
@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="nav-content">
                     <a class="nav-brand" href="#">
-                        <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="38" width="38" />
+                        <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="48" width="48" />
                     </a>
                     <div class="nav-links">
                         <a class="nav-link" href="#getting-started" title="Getting Started">Getting Started</a>
@@ -54,14 +54,14 @@
             </div>
         </div>
         <section id="landing-page" class="bg-primary-light">
-            <div class="container dom-flowt-no-overflow ">
-                <div class="landing-header dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-right" dom-flowt-duration="800">
+            <div class="container" dom-flowt-overflow="hidden">
+                <div class="landing-header " dom-flowt-is-visible="false" dom-flowt-type="float-right" dom-flowt-duration="800">
                     MAKING WEB DEVELOPMENT EASIER AND MORE FUN
                 </div>
-                <div class="landing-description dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-left" dom-flowt-duration="800">
+                <div class="landing-description " dom-flowt-is-visible="false" dom-flowt-type="float-left" dom-flowt-duration="800">
                     <b class="text-gradient">DOM Flowt</b> is a lightweight JavaScript library for performing animations on elements as they appear into a users view.
                 </div>
-                <div class="dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-duration="800" dom-flowt-type="float-up">
+                <div class="" dom-flowt-is-visible="false" dom-flowt-duration="800" dom-flowt-type="float-up">
                     <a class="btn" href="#getting-started" title="getting started">
                         <img alt="arrow" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
                         <div>Get Started</div>
@@ -77,12 +77,26 @@
                 <div class="line-primary"></div>
                 <div class="section-body dom-flowt-no-overflow">
                     <div class="text-container text-white">
-                        Latest stable version : 1.1
+                        Latest stable version : 2.0
                     </div>
                     <div class="text-container text-white">
-                        Release Date : 2024-08-09
+                        Release Date : 2024-09-05
                     </div>
                     <div class="change-logs">
+                        <div class="change-log">
+                            <div class="change-log-header">
+                                Change Log 2.0
+                            </div>
+                            <ul>
+                                <li>Renaming Dom Flowt object from "DOM_FLOWT" to "DOMFlowt"</li>
+                                <li>Adding the "dom-flowt-repeat" attribute</li>
+                                <li>Adding the "dom-flowt-overflow" attribute</li>
+                                <li>Removed "dom-flowt-hidden" class</li>
+                                <li>Removed "dom-flowt-no-overflow" class</li>
+                                <li>Increasing animation pixel size from 60 to 72</li>
+                                <li>Reduced js file size by 1KB</li>
+                            </ul>
+                        </div>
                         <div class="change-log">
                             <div class="change-log-header">
                                 Change Log 1.1
@@ -119,13 +133,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="padding-y-small dom-flowt-hidden " dom-flowt-is-visible="false" dom-flowt-type="float-left">
-                        <a class="btn" href="./content/js/lib/stable/dom-flowt.1.1.zip" title="Download dom-flowt">
+                    <div class="padding-y-small  " dom-flowt-is-visible="false" dom-flowt-type="float-left">
+                        <a class="btn" href="./content/lib/stable/dom-flowt.2.0.zip" title="Download dom-flowt">
                             <img alt="download" src="./content/icons/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
-                            <div>Download dom-flowt.1.1.zip</div>
+                            <div>Download dom-flowt.2.0.zip</div>
                         </a>
                     </div>
-                    <div class="padding-y-small dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                    <div class="padding-y-small " dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <a class="btn" href="#getting-started" title="using dom flowt"> 
                             <img alt="arrow" src="./content/icons/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="16" width="16"/>
                             <div>Using DOM flowt</div>
@@ -134,7 +148,7 @@
                 </div>
             </div>
         </section>
-        <section id="getting-started" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+        <section id="getting-started" class="bg-primary-light " dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container">
                 <div class="section-header text-gradient">
                     Getting Started
@@ -238,19 +252,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="line-grey"></div>
                     <div class="mini-section">
                         <div class="mini-section-header">
-                            Using “dom-flowt-hidden” class
+                            Using "dom-flowt-overflow" attribute
                         </div>
                         <div class="mini-section-body">
-                            <div class="text-container ">
-                                The “dom-flowt-hidden” class is used to hide elements to allow them to be gracefully animated in when they appear on the users screen.
+                            <div class="text-container">
+                                The "dom-flowt-overflow" is an attribute used by DOM Flowt CSS to hide overflow on an element.
+                                <br />
+                                If you wish to hide overflow on an element use the full attribute with value of "hidden".
                                 <br/><br/>
-                                It is recommended that you use this class to prevent some weird situations when using DOM Flowt 
+                                So the full use of the attribute will now be <b>dom-flowt-overflow="hidden"</b>
                             </div>
                         </div>
                     </div>
+                    <div class="mini-section">
+                        <div class="mini-section-header">
+                            Using "dom-flowt-repeat" attribute
+                        </div>
+                        <div class="mini-section-body">
+                            <div class="text-container">
+                                The "dom-flowt-repeat" is an indicator attribute that is used by the DOM Flowt javascript to determine whether the element should re-animated or re-transition 
+                                when it falls back into the users view. 
+                                <br />
+                                The default value of this attribute is "repeat" by default
+                                <br />
+                                If you wish to change the behaviour of this attribute and only animate an element once per page load, change the value to "no-repeat"
+                                <br/><br/>
+                                So the full use of the attribute will be <b>dom-flowt-overlow="repeat|no-repeat"</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-grey"></div>
                     <div class="line-grey"></div>
                     <div class="mini-section">
                         <div class="mini-section-header">
@@ -275,23 +308,23 @@
                 </div>
             </div>
         </section>
-        <section id="why-use" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+        <section id="why-use" class="bg-dark " dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container">
                 <div class="section-header text-gradient text-center">
                     Why Use DOM Flowt
                 </div>
                 <div class="line-primary"></div>
                 <div class="section-body">
-                    <div class="why-use-cards dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
-                        <div class="why-use-card dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                    <div class="why-use-cards " dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                        <div class="why-use-card " dom-flowt-is-visible="false" dom-flowt-type="float-up" dom-flowt-repeat="no-repeat">
                             <div class="why-use-card-icon">
                                 <img alt="bulb" src="./content/icons/lightbulb_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
                             </div>
                             <div class="why-use-card-text">
-                                It is very easy to setup and use
+                                It is very easy to setup and use.
                             </div>
                         </div>
-                        <div class="why-use-card dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-delay="500" dom-flowt-type="float-up">
+                        <div class="why-use-card " dom-flowt-is-visible="false" dom-flowt-delay="500" dom-flowt-type="float-up" dom-flowt-repeat="no-repeat">
                             <div class="why-use-card-icon">
                                 <img alt="bulb" src="./content/icons/lightbulb_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
                             </div>
@@ -299,39 +332,38 @@
                                 it is flexible and easy to extend.
                             </div>
                         </div>
-                        <div class="why-use-card dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-delay="1000" dom-flowt-type="float-up">
+                        <div class="why-use-card " dom-flowt-is-visible="false" dom-flowt-delay="1000" dom-flowt-type="float-up" dom-flowt-repeat="no-repeat">
                             <div class="why-use-card-icon">
                                 <img alt="bulb" src="./content/icons/lightbulb_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" height="32" width="32">
                             </div>
                             <div class="why-use-card-text">
-                                it is optimized for speed
+                                it is optimized for speed.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="pop">
+        <section class="bg-primary-light " dom-flowt-is-visible="false" dom-flowt-type="pop">
             <div class="container">
                 <div class="section-header text-gradient text-center">
                     ENHANCE A USERS EXPERIENCE AND MAKE YOUR WEBSITE’S ELEMENTS SMOOTHLY TRANSITION INTO YOUR USERS VIEW
                 </div>
             </div>
         </section>
-        <section id="examples" class="bg-dark dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+        <section id="examples" class="bg-dark " dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container">
                 <div class="section-header text-gradient text-center">
                     Examples
                 </div>
                 <div class="line-primary"></div>
                 <div class="section-body">
-                    <div class="text-container text-white dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                    <div class="text-container text-white "  dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         Using the DOM Flowt attributes on your element
                     </div>
-                    <div class="padding-y-small dom-flowt-hidden"  dom-flowt-is-visible="false" dom-flowt-type="float-up">
+                    <div class="padding-y-small "  dom-flowt-is-visible="false" dom-flowt-type="float-up">
                         <textarea class="code-dark" readonly rows="8">
 <div 
-class="dom-flowt-hidden" 
 dom-flowt-is-visible="false" 
 dom-flowt-type="fade" 
 dom-flowt-duration="1000"> 
@@ -342,13 +374,13 @@ Some Content
                 </div>
             </div>
         </section>
-        <section id="footer" class="bg-primary-light dom-flowt-hidden" dom-flowt-is-visible="false" dom-flowt-type="float-up">
+        <section id="footer" class="bg-primary-light " dom-flowt-is-visible="false" dom-flowt-type="float-up">
             <div class="container padding-y-small">
                 <footer class="footer">
                     <div class="footer-logo">
                         <img alt="dom flowt logo" src="./content/icons/dom flowt-02.png" height="74" dom-flowt-type="float-up" />
                     </div>
-                    <div class="footer-links dom-flowt-hidden" dom-flowt-is-visible="false">
+                    <div class="footer-links " dom-flowt-is-visible="false">
                         <a class="footer-link" href="#getting-started" title="Getting Started">Getting Started</a>
                         <a class="footer-link" href="#download" title="Download">Download</a>
                         <a class="footer-link" href="#why-use" title="Why Use">Why Use</a>
@@ -362,7 +394,7 @@ Some Content
             </div>
         </section>
     </main>
-    <script src="./content/js/lib/stable/dom-flowt.1.1.js"></script>
+    <script src="./content/lib/stable/dom-flowt.2.0.js"></script>
     <script src="./content/js/app.js"></script>
 </body>
 </html>

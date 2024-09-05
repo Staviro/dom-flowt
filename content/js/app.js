@@ -1,9 +1,9 @@
 document.onscroll = function() {
-    DOM_FLOWT.checkForNewOnScreenElements();
+    DOMFlowt.checkForNewOnScreenElements();
 }
 
 window.onload = function() {
-    DOM_FLOWT.checkForNewOnScreenElements();
+    DOMFlowt.checkForNewOnScreenElements();
 }
 
 function openMobileMenu() {

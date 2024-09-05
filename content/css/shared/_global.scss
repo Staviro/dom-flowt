@@ -14,11 +14,11 @@ img {
 .container {
     max-width: $container-max-width;
     margin: auto;
-    padding: 62px $padding-default;
+    padding: 86px $padding-default;
 }
 
 .section-header {
-    font-size: 44px;
+    font-size: 32px;
     font-weight: bold;
     width: fit-content;
     padding: $padding-default 0;
@@ -66,7 +66,7 @@ img {
     margin: 0;
 
     li {
-        padding: $padding-small 0;
+        padding: $padding-smaller 0;
     }
 }
 
