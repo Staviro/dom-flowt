@@ -22,7 +22,7 @@ img {
 
 .section-header {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 400;
   width: -moz-fit-content;
   width: fit-content;
   padding: 16px 0;
@@ -80,7 +80,7 @@ img {
 .mini-section-header {
   color: #2CD196;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 400;
   padding: 16px 0;
 }
 
@@ -230,7 +230,7 @@ body {
 
 .landing-header {
   font-size: 56px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .landing-description {
   padding: 8px 0;

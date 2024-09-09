@@ -46,7 +46,7 @@
 }
 @keyframes dom-flowt-pop {
   0% {
-    transform: translateY(72px) scale(0%);
+    transform: translateY(72px) scale(80%);
     opacity: 0;
   }
   100% {

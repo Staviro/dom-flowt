@@ -62,7 +62,7 @@ $float-side-space: 72px;
 
 @keyframes dom-flowt-pop {
     0% {
-        transform: translateY($translate-y-height) scale(0%);
+        transform: translateY($translate-y-height) scale(100% - $translate-y-height);
         opacity: 0;
     }
     100% {
