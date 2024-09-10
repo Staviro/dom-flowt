@@ -1,6 +1,6 @@
 const DOMFlowt = {
     defaults: { type: "fade", duration: 500, repeat: "repeat", },
-    attributes: { type: "dom-flowt-type", duration: "dom-flowt-type", delay: "dom-flowt-delay", repeat: "dom-flowt-repeat", visible : "dom-flowt-is-visible" },
+    attributes: { type: "dom-flowt-type", duration: "dom-flowt-duration", delay: "dom-flowt-delay", repeat: "dom-flowt-repeat", visible : "dom-flowt-is-visible" },
     isOnScreen: function(el) {
         let elPosition = el.getBoundingClientRect();
         let result = window.innerHeight - elPosition.y;

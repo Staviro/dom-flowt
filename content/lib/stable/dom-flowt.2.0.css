@@ -9,6 +9,7 @@
 .dom-flowt-transition, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop, .dom-flowt-fade {
   animation-duration: 500ms;
   animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   box-sizing: border-box;
 }
 
@@ -46,7 +47,7 @@
 }
 @keyframes dom-flowt-pop {
   0% {
-    transform: translateY(72px) scale(80%);
+    transform: translateY(72px) scale(calc(100% - 72px));
     opacity: 0;
   }
   100% {

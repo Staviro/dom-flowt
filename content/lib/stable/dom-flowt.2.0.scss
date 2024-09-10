@@ -15,6 +15,7 @@ $float-side-space: 72px;
 .dom-flowt-transition {
     animation-duration: 500ms;
     animation-iteration-count: 1;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1);
     box-sizing: border-box;
 }
 
@@ -62,7 +63,7 @@ $float-side-space: 72px;
 
 @keyframes dom-flowt-pop {
     0% {
-        transform: translateY($translate-y-height) scale(100% - $translate-y-height);
+        transform: translateY($translate-y-height) scale(calc(100% - $translate-y-height));
         opacity: 0;
     }
     100% {
