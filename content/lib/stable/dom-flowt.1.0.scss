@@ -25,9 +25,14 @@ $float-side-space: 72px;
     animation-name: dom-flowt-fade;
 }
 
-.dom-flowt-pop {
+.dom-flowt-pop-up {
     @extend .dom-flowt-transition;
-    animation-name: dom-flowt-pop;
+    animation-name: dom-flowt-pop-up;
+}
+
+.dom-flowt-pop-down {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-pop-down;
 }
 
 .dom-flowt-float-right {
@@ -61,9 +66,20 @@ $float-side-space: 72px;
     }
 }
 
-@keyframes dom-flowt-pop {
+@keyframes dom-flowt-pop-up {
     0% {
-        transform: translateY($translate-y-height) scale(calc(100% - $translate-y-height));
+        transform: translateY($translate-y-height) scale(90%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(100%);
+    }
+}
+
+@keyframes dom-flowt-pop-down {
+    0% {
+        transform: translateY(-$translate-y-height) scale(90%);
         opacity: 0;
     }
     100% {

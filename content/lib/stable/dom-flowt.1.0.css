@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.dom-flowt-transition, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop, .dom-flowt-fade {
+.dom-flowt-transition, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop-down, .dom-flowt-pop-up, .dom-flowt-fade {
   animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -17,8 +17,12 @@
   animation-name: dom-flowt-fade;
 }
 
-.dom-flowt-pop {
-  animation-name: dom-flowt-pop;
+.dom-flowt-pop-up {
+  animation-name: dom-flowt-pop-up;
+}
+
+.dom-flowt-pop-down {
+  animation-name: dom-flowt-pop-down;
 }
 
 .dom-flowt-float-right {
@@ -45,9 +49,19 @@
     opacity: 1;
   }
 }
-@keyframes dom-flowt-pop {
+@keyframes dom-flowt-pop-up {
   0% {
-    transform: translateY(72px) scale(calc(100% - 72px));
+    transform: translateY(72px) scale(90%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(100%);
+  }
+}
+@keyframes dom-flowt-pop-down {
+  0% {
+    transform: translateY(-72px) scale(90%);
     opacity: 0;
   }
   100% {
