@@ -55,6 +55,15 @@ $float-side-space: 72px;
     animation-name: dom-flowt-float-up;
 }
 
+.dom-flowt-flip-horizontal {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-flip-horizontal;
+}
+
+.dom-flowt-flip-vertical {
+    @extend .dom-flowt-transition;
+    animation-name: dom-flowt-flip-vertical;
+}
 
 // @desc Creatind DOM FLowt animations or keyframes
 @keyframes dom-flowt-fade {
@@ -129,5 +138,28 @@ $float-side-space: 72px;
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes dom-flowt-flip-horizontal {
+    0% {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+
+@keyframes dom-flowt-flip-vertical {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
     }
 }

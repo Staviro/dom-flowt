@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.dom-flowt-transition, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop-down, .dom-flowt-pop-up, .dom-flowt-fade {
+.dom-flowt-transition, .dom-flowt-flip-vertical, .dom-flowt-flip-horizontal, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop-down, .dom-flowt-pop-up, .dom-flowt-fade {
   animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -39,6 +39,14 @@
 
 .dom-flowt-float-up {
   animation-name: dom-flowt-float-up;
+}
+
+.dom-flowt-flip-horizontal {
+  animation-name: dom-flowt-flip-horizontal;
+}
+
+.dom-flowt-flip-vertical {
+  animation-name: dom-flowt-flip-vertical;
 }
 
 @keyframes dom-flowt-fade {
@@ -108,4 +116,24 @@
     opacity: 1;
     transform: translateY(0);
   }
-}/*# sourceMappingURL=dom-flowt.1.0.css.map */
+}
+@keyframes dom-flowt-flip-horizontal {
+  0% {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes dom-flowt-flip-vertical {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}/*# sourceMappingURL=dom-flowt.css.map */
