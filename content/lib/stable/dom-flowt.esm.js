@@ -1,5 +1,3 @@
-'use strict'
-
 const DOMFlowt = {
     defaults: { type: "fade", duration: 500, repeat: "repeat", },
     attributes: { type: "dom-flowt-type", duration: "dom-flowt-duration", delay: "dom-flowt-delay", repeat: "dom-flowt-repeat", visible : "dom-flowt-is-visible" },
@@ -51,3 +49,5 @@ const DOMFlowt = {
     },
     watch() { DOMFlowt.hiddenFlowtElements(); }
 }
+
+export default DOMFlowt;

@@ -1,0 +1,24 @@
+
+@import '../../shared/variables';
+
+.download-card {
+    max-width: 390px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    border-radius: 16px;
+    background: linear-gradient(-30deg, #1F1F1F, black, #008D5A);
+
+    &-release-date {
+        padding: 4px 12px;
+        width: fit-content;
+        background-color: rgba(white, 10%);
+        border-radius: 8px;
+    }
+
+    &-version {
+        font-size: 18px;
+        font-weight: 900;
+    }
+}

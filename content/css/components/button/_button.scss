@@ -1,0 +1,24 @@
+@import '../../shared/variables';
+
+.btn {
+    display: flex;
+    padding: 12px 20px;
+    border-radius: 32px;
+    background-color: rgba(white, 10%);
+    color: white;
+    width: fit-content;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:is(:hover, :active, :focus) {
+        background-color: transparent
+    }
+
+    img {
+        display: flex;
+    }
+}

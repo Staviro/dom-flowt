@@ -1,9 +1,21 @@
+//Global
 @import './font';
 @import './shared/global';
 @import './shared/main';
-@import './nav/nav';
-@import './landing/landing';
-@import './button/button';
-@import './footer/footer';
-@import './why-use/why-use';
-@import './mobile-menu/mobile-menu';
+@import './components/layout/layout';
+
+//Components
+@import './components/nav/nav';
+@import './components/landing/landing';
+@import './components/button/button';
+@import './components/footer/footer';
+@import './components/why-use/why-use';
+@import './components/download/download';
+@import './components/get-started/get-started';
+@import './components/attribute/attr';
+@import './components/type/type';
+@import './components/menu/menu';
+@import './components/modal/modal';
+
+//Lib
+@import '../lib/stable/dom-flowt.scss';

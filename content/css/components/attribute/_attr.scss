@@ -1,0 +1,22 @@
+.attr-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.attr-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: linear-gradient(-145deg, #2A2A2A, #0C0C0C);
+    border-radius: 16px;
+
+    &-full-name {
+        background-color: $color-primary;
+        padding: 4px;
+        border-radius: 8px;
+        width: fit-content;
+    }
+}

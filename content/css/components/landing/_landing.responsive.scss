@@ -1,0 +1,8 @@
+@import '../../shared/variables';
+
+
+@media screen and (max-width: $tablet-max) {
+    .landing {
+        background: linear-gradient(30deg, black, black, #444);
+    }
+}

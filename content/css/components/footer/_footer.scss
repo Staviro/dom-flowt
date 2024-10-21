@@ -1,0 +1,35 @@
+@import '../../shared/variables';
+
+footer {
+    margin-top: 16px;
+    border-top: 1px solid rgba(white, 10%);
+    padding: 32px 16px;
+
+    img {
+        margin: auto;
+    }
+
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 16px 0;
+        list-style: none;
+        width: fit-content;
+        margin: auto;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 32px;
+            display: block;
+
+            &:is(:hover, :active, :hover) {
+                background-color: rgba(white, 5%);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+@import './footer.reponsive';

@@ -1,0 +1,13 @@
+@import '../../shared/variables';
+
+@media screen and (max-width: $tablet-max) {
+    .use-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: $phone-lg-max) {
+    .use-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

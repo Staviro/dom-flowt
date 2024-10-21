@@ -1,0 +1,41 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(black, 80%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    box-sizing: border-box;
+    padding: 16px;
+
+    &-content {
+        border: 1px solid #222;
+        border-radius: 8px;
+        background-color: black;
+        max-width: 320px;
+        max-width: 580px;
+        color: white;
+    }
+
+    &-header {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #222;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &-body {
+        padding: 16px;
+    }
+}

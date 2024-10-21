@@ -1,0 +1,32 @@
+@import '../../shared/variables';
+
+.use-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.use-card {
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: linear-gradient(-30deg, #1F1F1F, #000000, #1F1F1F);
+
+    &:hover {
+        background: linear-gradient(-30deg, #1F1F1F, #1F1F1F);
+
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &-desc {
+        font-size: 14px;
+    }
+}
+
+@import './why-use.responsive';

@@ -1,0 +1,27 @@
+@import '../../shared/variables';
+
+.main {
+    max-width: $container-max-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 16px;
+
+    &-side {
+        box-sizing: border-box;
+    }
+
+    &-body {
+        box-sizing: border-box;
+        background-color: black;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - 0px);
+        overflow-y: auto;
+        color: white;
+        scroll-behavior: smooth;
+    }
+}
+
+@import './layout.responsive';

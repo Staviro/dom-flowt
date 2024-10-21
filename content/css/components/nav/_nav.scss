@@ -1,0 +1,60 @@
+
+@import '../../shared/variables';
+
+.nav-container {
+    position: absolute;
+    left: 320px;
+    right: 0;
+    top: 16px;
+    margin: auto;
+    width: fit-content;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(white, 10%);
+    border: 1px solid rgba(white, 5%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 4px;
+    border-radius: 32px;
+    color: white;
+
+    .brand {
+        padding: 0 12px;
+        display: flex;
+        img {
+            display: flex;
+            align-self: center;
+        }
+    }
+
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 32px;
+            display: block;
+
+            &:is(:hover, :active, :hover) {
+                background-color: rgba(white, 5%);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .nav-icons {
+        display: none
+    }
+}
+
+@import './nav.responsive';

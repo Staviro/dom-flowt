@@ -6,11 +6,10 @@
   overflow: hidden;
 }
 
-.dom-flowt-transition, .dom-flowt-flip-vertical, .dom-flowt-flip-horizontal, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop-down, .dom-flowt-pop-up, .dom-flowt-fade {
+.dom-flowt-transition, .dom-flowt-jump, .dom-flowt-flip-vertical, .dom-flowt-flip-horizontal, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop-down, .dom-flowt-pop-up, .dom-flowt-fade {
   animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  box-sizing: border-box;
 }
 
 .dom-flowt-fade {
@@ -47,6 +46,10 @@
 
 .dom-flowt-flip-vertical {
   animation-name: dom-flowt-flip-vertical;
+}
+
+.dom-flowt-jump {
+  animation-name: dom-flowt-jump;
 }
 
 @keyframes dom-flowt-fade {
@@ -135,5 +138,31 @@
   100% {
     opacity: 1;
     transform: rotateX(0deg);
+  }
+}
+@keyframes dom-flowt-jump {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+  }
+  40% {
+    transform: translateY(50%) scaleY(50%);
+    -webkit-transform: translateY(50%) scaleY(50%);
+  }
+  60% {
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+  }
+  80% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
 }/*# sourceMappingURL=dom-flowt.css.map */

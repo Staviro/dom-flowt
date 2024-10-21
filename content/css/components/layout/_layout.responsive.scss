@@ -1,0 +1,42 @@
+@import '../../shared/variables';
+
+@media screen and (min-width: $laptop-min) {
+    .main {
+        &-side {
+            display: block !important;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-max) {
+    .main {
+        display: block;
+        gap: 0px;
+        padding: 0px;
+
+        &-side {
+            box-sizing: border-box;
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 4;
+            background-color: rgba(black, 80%);
+            width: 100%;
+        }
+
+        &-body {
+            box-sizing: border-box;
+            background-color: black;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            min-height:initial;
+            max-height: 100vh;
+            color: white;
+            overflow-y: auto;
+
+        }
+    }
+}

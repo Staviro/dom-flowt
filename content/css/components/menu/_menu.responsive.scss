@@ -1,0 +1,15 @@
+@media screen and (max-width: $tablet-max) {
+    .menu {
+        border: 1px solid #222;
+        border-left: none;
+        &-header {
+            .icon-container {
+                display: block;
+            }
+        }
+
+        &-icons {
+            display: flex;
+        }
+    }
+}

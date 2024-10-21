@@ -1,26 +1,9 @@
 $color-primary: #5555FF;
 $color-secondary: #2CD196;
-$color-text: #3F3F3F;
-$color-text-light: #666666;
-$color-text-lighter: #AAAAAA;
-$color-primary-bg-light: white;
-$color-dark: #2A2A2A;
-$color-light-grey: #efefef;
 
 $primary-gradient: linear-gradient(to right, $color-primary, $color-secondary);
 
-$padding-smaller: 4px;
-$padding-small: 8px;
-$padding-default: 16px;
-
-$gap-smaller: 4px;
-$gap-small: 8px;
-$gap-default: 16px;
-
-$border-radius-small: 4px;
-$border-radius-default: 8px;
-
-$container-max-width: 1119px;
+$container-max-width: 1600px;
 
 $phone-max: 579px;
 $phone-lg-min: 580px;

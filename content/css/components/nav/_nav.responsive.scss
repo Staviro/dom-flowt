@@ -1,0 +1,27 @@
+@import '../../shared/variables';
+
+@media screen and (max-width: $tablet-max) {
+    .nav-container {
+        left: 0;
+    }
+    nav {
+        .nav-icons {
+            display: flex;
+            gap: 12px;
+            padding: 0 4px;
+
+            .icon-container {
+                padding: 4px;
+                border-radius: 12px;
+                cursor: pointer;
+                &:hover {
+                    background-color: rgba(white, 10%);
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.type-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.type-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: linear-gradient(320deg, #820D95, #6C2FBC, #29BFBF);
+    border-radius: 16px;
+}
