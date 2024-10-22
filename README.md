@@ -1,9 +1,11 @@
 DOM Flowt is a lightweight JavaScript library for performing animations on elements as they appear into a users view.
 
-To use DOM Flowt in your project, download the ZIP file at **/content/js/lib/stable/**
+To use DOM Flowt in your project, download the ZIP file at **/content/lib/stable/**
 Or you can download the JS and CSS files manually if you like.
 
 **It is important to download both the CSS and JS and inject them into your project.**
+
+View Examples at https://domflowt.co.za/
 
 DOM Flowt uses custom HTML attributes to make it super easy to use.
 Here are some attributes you can use in DOM Flowt
