@@ -1,25 +1,25 @@
-DOMFlowt.defaults.duration = 1000;
+DomFlowt.defaults.duration = 1000;
 
 document.querySelector(".main-body").addEventListener("scroll", function() {
-    DOMFlowt.watch();
+    DomFlowt.watch();
 });
 
 document.querySelector(".menu").addEventListener("scroll", function() {
-    DOMFlowt.watch();
+    DomFlowt.watch();
 });
 
 window.addEventListener("scroll", function() {
-    DOMFlowt.watch();
+    DomFlowt.watch();
 });
 
 window.addEventListener("load", function() {
-    DOMFlowt.watch();
+    DomFlowt.watch();
 });
 
 
 function openMenu() {
     document.querySelector(".main-side").style.display = "block";
-    DOMFlowt.watch();
+    DomFlowt.watch();
 }
 
 function closeMenu() {
