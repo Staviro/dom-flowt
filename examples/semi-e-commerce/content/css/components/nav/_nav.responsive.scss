@@ -1,0 +1,8 @@
+@import '../../shared/variables';
+
+
+@media (max-width: $phone-lg-max) {
+    .nav-links {
+        display: none;
+    }
+}

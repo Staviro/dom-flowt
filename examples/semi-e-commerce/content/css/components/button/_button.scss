@@ -1,0 +1,17 @@
+
+.btn {
+    display: block;
+    justify-content: center;
+    align-self: center;
+    padding: 12px 20px;
+    border: 1px solid #333;
+    background-color: black;
+    color: white;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:is(:focus, :hover, :active) {
+        background-color: #333;
+    }
+}

@@ -1,0 +1,21 @@
+.banner-content {
+    padding: 72px;
+    border-radius: 32px;
+    background: linear-gradient(34deg, #eeafff, #efffff, #fefedf);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.banner-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+@import './banner.responsive';

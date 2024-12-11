@@ -1,19 +1,19 @@
 DomFlowt.defaults.duration = 1000;
 
-document.querySelector(".main-body").addEventListener("scroll", function() {
-    DomFlowt.watch();
-});
-
-document.querySelector(".menu").addEventListener("scroll", function() {
-    DomFlowt.watch();
-});
-
 window.addEventListener("scroll", function() {
     DomFlowt.watch();
 });
 
 window.addEventListener("load", function() {
     DomFlowt.watch();
+
+    document.querySelector(".main-body").addEventListener("scroll", function() {
+        DomFlowt.watch();
+    });
+    
+    document.querySelector(".menu").addEventListener("scroll", function() {
+        DomFlowt.watch();
+    });
 });
 
 

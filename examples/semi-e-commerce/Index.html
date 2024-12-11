@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/css/main.css"/>
+    <title>Semi E-Commerce</title>
+    <script src="./content/js/data.js"></script>
+    <script src="./content/js/render.js"></script>
+    <script src="./content/js/html.shop.js"></script>
+</head>
+<body>
+    <header class="nav-header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-start">
+                    <a class="nav-brand">flowt.shop</a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#" title="shop">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" title="shop">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#" title="shop">About</a>
+                        </li>
+                        <li>
+                            <a href="/" title="shop">Flowt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-end">
+                    <button class="btn nav-btn-login">Sign In</button>
+                    <button class="btn">Cart</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="br"></div>
+        <section class="banner">
+            <div class="container">
+                <div class="banner-content" dom-flowt-overflow="none">
+                    <div class="banner-title" dom-flowt-is-visible="false" dom-flowt-type="float-right" dom-flowt-duration="1000">
+                        Hot Deals,
+                        Great Prices,
+                        Limited Offers
+                    </div>
+                    <div class="banner-desc" dom-flowt-is-visible="false" dom-flowt-type="float-left" dom-flowt-duration="1000">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas laboriosam minima reiciendis fugiat nostrum pariatur possimus error sed quis sapiente deserunt quae, 
+                        provident, earum harum culpa optio, fuga et ipsum veritatis suscipit. Inventore, 
+                        officia sapiente ea quibusdam deleniti laudantium tempora.
+                    </div>
+                    <div class="banner-actions">
+                        <button class="btn"  dom-flowt-is-visible="false" dom-flowt-type="fade" dom-flowt-duration="1000">Start Shopping!</button>
+                        <button class="btn"  dom-flowt-is-visible="false" dom-flowt-type="jump" dom-flowt-duration="1000">Register an account</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shopping-items-latest">
+            <div class="container">
+                <div class="section-header">
+                    <p>Latest</p>
+                </div>
+                <div class="section-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam!</p>
+                </div>
+                <div class="section-body">
+                    <div class="shop-items shop-items-latest"></div>
+                </div>
+            </div>
+        </section>
+        <section id="shopping-items-deals">
+            <div class="container">
+                <div class="section-header">
+                    <p>Hot Deals</p>
+                </div>
+                <div class="section-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam!</p>
+                </div>
+                <div class="section-body">
+                    <div class="shop-items shop-items-new"></div>
+                </div>
+            </div>
+        </section>
+        <section id="shopping-items-offers">
+            <div class="container">
+                <div class="section-header">
+                    <p>Limited Offers</p>
+                </div>
+                <div class="section-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam!</p>
+                </div>
+                <div class="section-body">
+                    <div class="shop-items shop-items-limited-offers"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/" title="dom flowt">Dom Flowt</a>
+                <div>&copy; flowt.shop 2024</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../content/lib/stable/dom-flowt.js"></script>
+    <script src="./content/js/app.js"></script>
+</body>
+</html>

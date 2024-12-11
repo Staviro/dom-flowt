@@ -1,0 +1,16 @@
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-content {
+    padding: 32px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    a {
+        color: white;
+    }
+}

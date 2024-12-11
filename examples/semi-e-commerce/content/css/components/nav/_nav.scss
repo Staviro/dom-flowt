@@ -1,0 +1,50 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 4px 0;
+}
+
+.nav-header {
+    background-color: black;
+}
+
+.nav-brand {
+    font-size: 22px;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2px;
+    margin: 0;
+
+    li {
+        padding: 0;
+        margin: 0;
+
+        a {
+            padding: 8px 20px;
+            display: block;
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 16px;
+
+            &:is(:focus, :hover, :active) {
+                background-color: rgba(white, 10%);
+            }
+        }
+    }
+}
+.nav-end {
+    display: flex;
+    gap: 4px;
+}
+
+.nav-btn-login {
+    border-color: transparent;
+}
+@import './nav.responsive';

@@ -1,0 +1,32 @@
+.shop-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.shop-item {
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #eee;
+
+    &:is(:hover, :active, :focus) {
+        box-shadow: 0 4px 8px rgba(black, 10%);
+    }
+} 
+
+.shop-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.shop-item-header {
+    img {
+        border-radius: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+}
+
+@import './shop-item.responsive';

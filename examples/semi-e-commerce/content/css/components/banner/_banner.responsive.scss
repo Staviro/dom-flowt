@@ -1,0 +1,7 @@
+@import '../../shared/variables';
+
+@media (max-width: $phone-max) {
+    .banner-content {
+        padding: 72px 32px;
+    }
+}
