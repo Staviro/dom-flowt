@@ -6,7 +6,6 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    //background: linear-gradient(30deg, black, black, #444);
 
     .content {
         h1 {
@@ -18,6 +17,14 @@
         p {
             font-size: 18px;
         }
+    }
+    
+    .landing-content {
+        padding: 72px;
+        border-radius: 32px;
+        background: linear-gradient(45deg, #111, #001, #021);
+        border: 1px solid #333;
+        box-sizing: border-box;
     }
 }
 

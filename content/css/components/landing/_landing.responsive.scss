@@ -4,5 +4,14 @@
 @media screen and (max-width: $tablet-max) {
     .landing {
         background: linear-gradient(30deg, black, black, #444);
+
+        .content {
+            h1 {
+                font-size: 32px;
+            }
+        }
+        .landing-content {
+            padding: 32px;
+        }
     }
 }

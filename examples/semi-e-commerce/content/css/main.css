@@ -98,6 +98,8 @@ body {
 
 .nav-brand {
   font-size: 22px;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-links {

@@ -22,3 +22,14 @@
         display: flex;
     }
 }
+
+.btn-dark {
+    background-color: black;
+    border-color: black;
+    color: white;
+
+    
+    &:is(:hover, :active, :focus) {
+        background-color: #333;
+    }
+}

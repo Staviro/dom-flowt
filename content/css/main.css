@@ -252,10 +252,23 @@ nav .nav-icons {
 .landing .content p {
   font-size: 18px;
 }
+.landing .landing-content {
+  padding: 72px;
+  border-radius: 32px;
+  background: linear-gradient(45deg, #111, #001, #021);
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
 
 @media screen and (max-width: 991px) {
   .landing {
     background: linear-gradient(30deg, black, black, #444);
+  }
+  .landing .content h1 {
+    font-size: 32px;
+  }
+  .landing .landing-content {
+    padding: 32px;
   }
 }
 .btn {
@@ -278,6 +291,15 @@ nav .nav-icons {
 }
 .btn img {
   display: flex;
+}
+
+.btn-dark {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.btn-dark:is(:hover, :active, :focus) {
+  background-color: #333;
 }
 
 footer {

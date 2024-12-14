@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./content/css/main.css"/>
+    <meta name="author" content="Joseph Morukhuladi">
+    <meta name="description" content="Dom Flowt is a lightweight JavaScript Library for performing animations on elements as they appear into a users view">
+    <!--Open Graph Protocol-->
+    <meta property="og:title" content="Dom Flowt JavaScript Library">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://domflowt.co.za/">
+    <meta property="og:image" content="https://domflowt.co.za/content/images/dom_flowt-03_180x180.png">
+    <meta property="og:description" content="Dom Flowt is a lightweight JavaScript Library for performing animations on elements as they appear into a users view">
+    <!--Open Graph Protocol End-->
+    <link rel="icon" href="../../content/images/dom_flowt-03_180x180.png">
+    <link rel="apple-touch-icon" href="../../content/images/dom_flowt-03_57x57.png" type="image/png" sizes="57x57">
+    <link rel="apple-touch-icon" href="../../content/images/dom_flowt-03_60x60.png" type="image/png" sizes="60x60">
+    <link rel="apple-touch-icon" href="../../content/images/dom_flowt-03_152x152.png" type="image/png" sizes="152x152">
+    <link rel="apple-touch-icon" href="../../content/images/dom_flowt-03_180x180.png" type="image/png" sizes="180x180">
     <title>Semi E-Commerce</title>
+
+    <link rel="stylesheet" href="./content/css/main.css" media="screen"/>
     <script src="./content/js/data.js"></script>
     <script src="./content/js/render.js"></script>
     <script src="./content/js/html.shop.js"></script>
@@ -12,9 +27,9 @@
 <body>
     <header class="nav-header">
         <div class="container">
-            <nav class="nav">
+            <nav class="nav" dom-flowt-is-visible="false" dom-flowt-type="fade" dom-flowt-duration="1000">
                 <div class="nav-start">
-                    <a class="nav-brand">flowt.shop</a>
+                    <a class="nav-brand" href="./Index.html">flowt.shop</a>
                 </div>
                 <div class="nav-center">
                     <ul class="nav-links">
@@ -57,7 +72,7 @@
                     </div>
                     <div class="banner-actions">
                         <button class="btn"  dom-flowt-is-visible="false" dom-flowt-type="fade" dom-flowt-duration="1000">Start Shopping!</button>
-                        <button class="btn"  dom-flowt-is-visible="false" dom-flowt-type="jump" dom-flowt-duration="1000">Register an account</button>
+                        <button class="btn"  dom-flowt-is-visible="false" dom-flowt-type="jump" dom-flowt-duration="1000">Register an Account</button>
                     </div>
                 </div>
             </div>

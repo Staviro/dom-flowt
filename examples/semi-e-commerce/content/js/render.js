@@ -8,7 +8,7 @@ const RENDER = {
             shopItem.className = "shop-item";
             shopItem.setAttribute('dom-flowt-is-visible', 'false');
             shopItem.setAttribute('dom-flowt-duration', 1000);
-            shopItem.setAttribute('dom-flowt-type', 'pop-up');
+            shopItem.setAttribute('dom-flowt-type', 'pop-down');
             shopItem.innerHTML = HTML_SHOP.shopItem()
             .replaceAll("##name##", item.name)
             .replaceAll("##price##", item.price.toLocaleString('en'))
