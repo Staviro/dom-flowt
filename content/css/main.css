@@ -344,10 +344,7 @@ footer ul a:is(:hover, :active, :hover) {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: linear-gradient(-30deg, #1F1F1F, #000000, #1F1F1F);
-}
-.use-card:hover {
-  background: linear-gradient(-30deg, #1F1F1F, #1F1F1F);
+  background-color: #1F1F1F;
 }
 .use-card-title {
   font-size: 18px;
@@ -374,7 +371,8 @@ footer ul a:is(:hover, :active, :hover) {
   gap: 16px;
   flex-direction: column;
   border-radius: 16px;
-  background: linear-gradient(-30deg, #1F1F1F, black, #008D5A);
+  background-color: rgba(0, 141, 90, 0.2);
+  border: 1px solid #008D5A;
 }
 .download-card-release-date {
   padding: 4px 12px;
@@ -403,8 +401,9 @@ footer ul a:is(:hover, :active, :hover) {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: linear-gradient(-145deg, #2A2A2A, #0C0C0C);
   border-radius: 16px;
+  background-color: #1a1a1a;
+  border: 1px solid #222;
 }
 .attr-card-full-name {
   background-color: #5555FF;
@@ -425,8 +424,9 @@ footer ul a:is(:hover, :active, :hover) {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: linear-gradient(320deg, #820D95, #6C2FBC, #29BFBF);
+  background-color: rgba(108, 47, 188, 0.25);
   border-radius: 16px;
+  border: 1px solid #6C2FBC;
 }
 
 .menu {

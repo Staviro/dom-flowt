@@ -8,7 +8,8 @@
     gap: 16px;
     flex-direction: column;
     border-radius: 16px;
-    background: linear-gradient(-30deg, #1F1F1F, black, #008D5A);
+    background-color: rgba(#008D5A, 20%);
+    border: 1px solid #008D5A;
 
     &-release-date {
         padding: 4px 12px;
