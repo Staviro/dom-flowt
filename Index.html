@@ -182,6 +182,14 @@
                         </code>
                     </li>
                     <li dom-flowt-is-visible="false" dom-flowt-type="float-right">
+                        <p>Add the watch method inside the "load" event listener. This is for elements that may already be in view at the point where the site is done loading.</p>
+                        <code aria-hidden="true">
+                            window.addEventListener("load", function() { <br>
+                                <div class="tab"></div>DomFlowt.watch(); <br>
+                            });
+                        </code>
+                    </li>
+                    <li dom-flowt-is-visible="false" dom-flowt-type="float-right">
                         <p>Add the watch method inside the "scroll" event listener on the element of your choice. Normally you would add the watch method to your window element.</p>
                         <code aria-hidden="true">
                             window.addEventListener("scroll", function() { <br>
