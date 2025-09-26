@@ -6,11 +6,11 @@
 }
 
 .type-card {
-    padding: 16px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: rgba(#6C2FBC, 25%);
-    border-radius: 16px;
-    border: 1px solid #6C2FBC;
+    background-color: rgba(#6C2FBC, 10%);
+    border-radius: 28px;
+    border: 1px solid rgba(#6C2FBC, 50%);
 }

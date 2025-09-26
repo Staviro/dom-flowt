@@ -339,8 +339,8 @@ footer ul a:is(:hover, :active, :hover) {
 }
 
 .use-card {
-  padding: 16px;
-  border-radius: 16px;
+  padding: 32px;
+  border-radius: 28px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -366,11 +366,11 @@ footer ul a:is(:hover, :active, :hover) {
 }
 .download-card {
   max-width: 390px;
-  padding: 16px;
+  padding: 32px;
   display: flex;
   gap: 16px;
   flex-direction: column;
-  border-radius: 16px;
+  border-radius: 28px;
   background-color: rgba(0, 141, 90, 0.2);
   border: 1px solid #008D5A;
 }
@@ -397,11 +397,11 @@ footer ul a:is(:hover, :active, :hover) {
 }
 
 .attr-card {
-  padding: 16px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border-radius: 16px;
+  border-radius: 28px;
   background-color: #1a1a1a;
   border: 1px solid #222;
 }
@@ -420,13 +420,13 @@ footer ul a:is(:hover, :active, :hover) {
 }
 
 .type-card {
-  padding: 16px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: rgba(108, 47, 188, 0.25);
-  border-radius: 16px;
-  border: 1px solid #6C2FBC;
+  background-color: rgba(108, 47, 188, 0.1);
+  border-radius: 28px;
+  border: 1px solid rgba(108, 47, 188, 0.5);
 }
 
 .menu {
