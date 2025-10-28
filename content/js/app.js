@@ -36,5 +36,3 @@ function openModal(selector) {
 function closeModal(selector) {
     document.querySelector(selector).style.display = "none";
 }
-
-console.log("OSCS Test v2");
