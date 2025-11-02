@@ -1,14 +1,16 @@
 /**
- * Overly Simplified Caching Strategy Beta Version 1
+ * Overly Simplified Caching Strategy Beta Version 2
  * Copyright Joseph Morukhuladi 2025 MIT LICENSE
  */
 const OSCS = {
     version: 1,
-    styles(target) {
-        let el = document.querySelector(target);
-        let links = el.querySelectorAll("link[oscs]");
+    styles() {
+        let links = document.querySelectorAll("link[oscs]");
         links.forEach(link => {
-            link.href = OSCS.appendVersion(link.href);
+            link.removeAttribute("oscs");
+            let cloneLink = link.cloneNode(true);
+            cloneLink.href = OSCS.appendVersion(cloneLink.href);
+            link.after(cloneLink);
         });
     },
     scripts(target, scripts) {
