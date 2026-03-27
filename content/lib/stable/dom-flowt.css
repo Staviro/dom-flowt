@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.dom-flowt-transition, .dom-flowt-jump, .dom-flowt-flip-vertical, .dom-flowt-flip-horizontal, .dom-flowt-float-up, .dom-flowt-float-down, .dom-flowt-float-left, .dom-flowt-float-right, .dom-flowt-pop-down, .dom-flowt-pop-up, .dom-flowt-fade {
+.dom-flowt-transition, .dom-flowt-jump *, .dom-flowt-jump, .dom-flowt-flip-vertical *, .dom-flowt-flip-vertical, .dom-flowt-flip-horizontal *, .dom-flowt-flip-horizontal, .dom-flowt-float-up-bounce *, .dom-flowt-float-up-bounce, .dom-flowt-float-up *, .dom-flowt-float-up, .dom-flowt-float-down-bounce *, .dom-flowt-float-down-bounce, .dom-flowt-float-down *, .dom-flowt-float-down, .dom-flowt-float-left-bounce *, .dom-flowt-float-left-bounce, .dom-flowt-float-left *, .dom-flowt-float-left, .dom-flowt-float-right-bounce *, .dom-flowt-float-right-bounce, .dom-flowt-float-right *, .dom-flowt-float-right, .dom-flowt-pop-down *, .dom-flowt-pop-down, .dom-flowt-pop-up *, .dom-flowt-pop-up, .dom-flowt-fade *, .dom-flowt-fade {
   animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -15,40 +15,98 @@
 .dom-flowt-fade {
   animation-name: dom-flowt-fade;
 }
+.dom-flowt-fade * {
+  animation-name: dom-flowt-fade;
+}
 
 .dom-flowt-pop-up {
+  animation-name: dom-flowt-pop-up;
+}
+.dom-flowt-pop-up * {
   animation-name: dom-flowt-pop-up;
 }
 
 .dom-flowt-pop-down {
   animation-name: dom-flowt-pop-down;
 }
+.dom-flowt-pop-down * {
+  animation-name: dom-flowt-pop-down;
+}
 
 .dom-flowt-float-right {
   animation-name: dom-flowt-float-right;
+}
+.dom-flowt-float-right * {
+  animation-name: dom-flowt-float-right;
+}
+
+.dom-flowt-float-right-bounce {
+  animation-name: dom-flowt-float-right-bounce;
+}
+.dom-flowt-float-right-bounce * {
+  animation-name: dom-flowt-float-right-bounce;
 }
 
 .dom-flowt-float-left {
   animation-name: dom-flowt-float-left;
 }
+.dom-flowt-float-left * {
+  animation-name: dom-flowt-float-left;
+}
+
+.dom-flowt-float-left-bounce {
+  animation-name: dom-flowt-float-bounce;
+}
+.dom-flowt-float-left-bounce * {
+  animation-name: dom-flowt-float-left-bounce;
+}
 
 .dom-flowt-float-down {
   animation-name: dom-flowt-float-down;
+}
+.dom-flowt-float-down * {
+  animation-name: dom-flowt-float-down;
+}
+
+.dom-flowt-float-down-bounce {
+  animation-name: dom-flowt-float-down-bounce;
+}
+.dom-flowt-float-down-bounce * {
+  animation-name: dom-flowt-float-down-bounce;
 }
 
 .dom-flowt-float-up {
   animation-name: dom-flowt-float-up;
 }
+.dom-flowt-float-up * {
+  animation-name: dom-flowt-float-up;
+}
+
+.dom-flowt-float-up-bounce {
+  animation-name: dom-flowt-float-up-bounce;
+}
+.dom-flowt-float-up-bounce * {
+  animation-name: dom-flowt-float-bounce;
+}
 
 .dom-flowt-flip-horizontal {
+  animation-name: dom-flowt-flip-horizontal;
+}
+.dom-flowt-flip-horizontal * {
   animation-name: dom-flowt-flip-horizontal;
 }
 
 .dom-flowt-flip-vertical {
   animation-name: dom-flowt-flip-vertical;
 }
+.dom-flowt-flip-vertical * {
+  animation-name: dom-flowt-flip-vertical;
+}
 
 .dom-flowt-jump {
+  animation-name: dom-flowt-jump;
+}
+.dom-flowt-jump * {
   animation-name: dom-flowt-jump;
 }
 
@@ -90,10 +148,42 @@
     transform: translateX(0);
   }
 }
+@keyframes dom-flowt-float-right-bounce {
+  0% {
+    transform: translateX(-72px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes dom-flowt-float-left {
   0% {
     transform: translateX(72px);
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes dom-flowt-float-left-bounce {
+  0% {
+    transform: translateX(72px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateX(4px);
   }
   100% {
     opacity: 1;
@@ -110,10 +200,42 @@
     transform: translateY(0);
   }
 }
+@keyframes dom-flowt-float-down-bounce {
+  0% {
+    transform: translateY(-72px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes dom-flowt-float-up {
   0% {
     transform: translateY(72px);
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes dom-flowt-float-up-bounce {
+  0% {
+    transform: translateY(72px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(4px);
   }
   100% {
     opacity: 1;
