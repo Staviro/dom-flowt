@@ -1,18 +1,19 @@
 "use strict";
 
 /*!
- *Dom Flowt 2.0.0
+ *Dom Flowt 2.1.0
  *(c) 2026 Joseph Morukhuladi
  *Licensed under MIT (https://github.com/Staviro/dom-flowt/blob/main/License.txt)
  */
 
 const DomFlowt = {
-  defaults: { type: "fade", repeat: "repeat" },
+  defaults: { type: "fade", repeat: "repeat", duration: 500 },
   attributes: {
     type: "dom-flowt-type",
     repeat: "dom-flowt-repeat",
     visible: "dom-flowt-is-visible",
     style: "dom-flowt-style",
+    duration: "dom-flowt-duration",
   },
   isOnScreen: function (entries) {
     for (const entry of entries) {
@@ -36,10 +37,15 @@ const DomFlowt = {
       el.getAttribute(DomFlowt.attributes.style),
       null,
     );
+    let _duration = DomFlowt.isEmpty(
+      el.getAttribute(DomFlowt.attributes.duration),
+      DomFlowt.defaults.duration,
+    );
     return {
       type: _type,
       repeat: _repeat,
       style: _style,
+      duration: _duration,
     };
   },
   isEmpty(val, alt) {
@@ -76,9 +82,11 @@ const DomFlowt = {
     let val = el.getAttribute(DomFlowt.attributes.visible);
     if (val === "false") {
       el.setAttribute(DomFlowt.attributes.visible, "true");
+      el.style.animationDuration = config.duration + "ms";
       el.classList.add(cls);
       function onEnd() {
         el.classList.remove(cls);
+        el.style.animationDuration = null;
       }
       el.addEventListener("animationend", function () {
         onEnd();

@@ -4,15 +4,6 @@ $float-side-space: 72px;
 $float-side-bounce-1: 8px;
 $float-side-bounce-2: 4px;
 
-// @desc Creating DOM Flowt classes & selectors
-[dom-flowt-is-visible="false"] {
-  opacity: 0;
-}
-
-[dom-flowt-overflow="hidden"] {
-  overflow: hidden;
-}
-
 // @desc Setting base transition behaviour
 .dom-flowt-transition {
   animation-duration: 500ms;
@@ -20,145 +11,72 @@ $float-side-bounce-2: 4px;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
+// @desc Creating DOM Flowt classes & selectors
+[dom-flowt-is-visible="false"] {
+  opacity: 0;
+  @extend .dom-flowt-transition;
+}
+
+[dom-flowt-overflow="hidden"] {
+  overflow: hidden;
+}
+
 // @desc Creating DOM FLowt animation classes
 .dom-flowt-fade {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-fade;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-fade;
-  }
 }
 
 .dom-flowt-pop-up {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-pop-up;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-pop-up;
-  }
 }
 
 .dom-flowt-pop-down {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-pop-down;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-pop-down;
-  }
 }
 
 .dom-flowt-float-right {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-right;
 
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-right;
-  }
 }
 
 .dom-flowt-float-right-bounce {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-right-bounce;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-right-bounce;
-  }
 }
 
 .dom-flowt-float-left {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-left;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-left;
-  }
 }
 
 .dom-flowt-float-left-bounce {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-bounce;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-left-bounce;
-  }
 }
 
 .dom-flowt-float-down {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-down;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-down;
-  }
 }
 
 .dom-flowt-float-down-bounce {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-down-bounce;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-down-bounce;
-  }
 }
 
 .dom-flowt-float-up {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-up;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-up;
-  }
 }
 
 .dom-flowt-float-up-bounce {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-float-up-bounce;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-float-bounce;
-  }
 }
 
 .dom-flowt-flip-horizontal {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-flip-horizontal;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-flip-horizontal;
-  }
 }
 
 .dom-flowt-flip-vertical {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-flip-vertical;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-flip-vertical;
-  }
 }
 
 .dom-flowt-jump {
-  @extend .dom-flowt-transition;
   animation-name: dom-flowt-jump;
-
-  * {
-    @extend .dom-flowt-transition;
-    animation-name: dom-flowt-jump;
-  }
 }
 
 // @desc Creatind DOM FLowt animations or keyframes
